@@ -13,10 +13,10 @@ import ScrollAnimation from '@/components/ScrollAnimation';
 
 const Index: React.FC = () => {
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col bg-black text-white">
       <ScrollAnimation />
       <Header />
-      <main className="flex-grow">
+      <main className="flex-grow pt-16 md:pt-20">
         <HeroSection />
         <FeaturesSection />
         <CoachesSection />

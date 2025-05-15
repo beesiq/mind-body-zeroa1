@@ -4,18 +4,22 @@ import { Button } from "@/components/ui/button";
 
 const Header: React.FC = () => {
   return (
-    <header className="fixed top-0 left-0 right-0 bg-white bg-opacity-90 backdrop-blur-sm z-50 shadow-sm">
+    <header className="fixed top-0 left-0 right-0 bg-black bg-opacity-90 backdrop-blur-sm z-50 shadow-sm">
       <div className="container-zeroa1 flex items-center justify-between h-16 md:h-20">
         <div className="flex items-center">
-          <span className="text-zeroa1-orange font-bold text-2xl">ZeroA1</span>
+          <img 
+            src="/lovable-uploads/0162e6e2-704b-4d2c-907c-18eaf24f5d2b.png" 
+            alt="ZeroA1 Logo" 
+            className="h-10" 
+          />
         </div>
         <nav className="hidden md:flex space-x-8">
-          <a href="#features" className="font-medium hover:text-zeroa1-orange transition-colors">Como Funciona</a>
-          <a href="#testimonials" className="font-medium hover:text-zeroa1-orange transition-colors">Depoimentos</a>
-          <a href="#pricing" className="font-medium hover:text-zeroa1-orange transition-colors">Preços</a>
-          <a href="#faq" className="font-medium hover:text-zeroa1-orange transition-colors">FAQ</a>
+          <a href="#features" className="text-white font-medium hover:text-zeroa1-orange transition-colors">Como Funciona</a>
+          <a href="#testimonials" className="text-white font-medium hover:text-zeroa1-orange transition-colors">Depoimentos</a>
+          <a href="#pricing" className="text-white font-medium hover:text-zeroa1-orange transition-colors">Preços</a>
+          <a href="#faq" className="text-white font-medium hover:text-zeroa1-orange transition-colors">FAQ</a>
         </nav>
-        <Button className="btn-primary">Começar Agora</Button>
+        <Button className="bg-zeroa1-orange hover:bg-zeroa1-lightOrange text-white">Começar Agora</Button>
       </div>
     </header>
   );

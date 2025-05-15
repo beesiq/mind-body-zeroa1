@@ -7,16 +7,25 @@ const coaches = [
     name: "Capitão Foco",
     description: "Direto e firme, ideal para quem precisa de disciplina e comandos claros.",
     stars: 5,
+    image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&q=80&cs=tinysrgb&fm=jpg&crop=entropy&w=400"
   },
   {
     name: "Mentora Zen",
     description: "Suave e acolhedora, perfeita para quem busca equilíbrio emocional com os treinos.",
     stars: 5,
+    image: "https://images.unsplash.com/photo-1518611012118-696072aa579a?ixlib=rb-4.0.3&q=80&cs=tinysrgb&fm=jpg&crop=entropy&w=400"
   },
   {
     name: "Mestre do Corpo",
     description: "Técnico e estratégico, focado em resultados e eficiência nos movimentos.",
     stars: 5,
+    image: "https://images.unsplash.com/photo-1594381898411-846e7d193883?ixlib=rb-4.0.3&q=80&cs=tinysrgb&fm=jpg&crop=entropy&w=400"
+  },
+  {
+    name: "Guia Prático",
+    description: "Objetivo e simplificador, ótimo para quem precisa de treinos práticos e diretos.",
+    stars: 5,
+    image: "https://images.unsplash.com/photo-1549060279-7e168fcee0c2?ixlib=rb-4.0.3&q=80&cs=tinysrgb&fm=jpg&crop=entropy&w=400"
   }
 ];
 
@@ -31,7 +40,7 @@ const CoachesSection: React.FC = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {coaches.map((coach, index) => (
             <div key={index} className="animate-on-scroll bg-zeroa1-black/50 border border-zeroa1-orange/20 rounded-xl p-6 flex flex-col h-full">
               <div className="flex justify-between items-center mb-4">
@@ -43,8 +52,12 @@ const CoachesSection: React.FC = () => {
                 </div>
               </div>
               <p className="body-md text-gray-300 flex-grow">{coach.description}</p>
-              <div className="h-20 mt-4 bg-zeroa1-black/30 rounded-lg flex items-center justify-center">
-                <p className="text-sm text-center">Ilustração do coach</p>
+              <div className="h-40 mt-4 bg-zeroa1-black/30 rounded-lg flex items-center justify-center overflow-hidden">
+                <img 
+                  src={coach.image} 
+                  alt={`${coach.name} coach`} 
+                  className="object-cover w-full h-full"
+                />
               </div>
               <div className="mt-4 p-3 bg-zeroa1-black/40 rounded-lg border border-zeroa1-orange/10">
                 <p className="text-xs italic text-gray-400">
