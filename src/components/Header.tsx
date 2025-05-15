@@ -19,7 +19,12 @@ const Header: React.FC = () => {
           <a href="#pricing" className="text-white font-medium hover:text-zeroa1-orange transition-colors">Preços</a>
           <a href="#faq" className="text-white font-medium hover:text-zeroa1-orange transition-colors">FAQ</a>
         </nav>
-        <Button className="bg-zeroa1-orange hover:bg-zeroa1-lightOrange text-white">Começar Agora</Button>
+        <Button 
+          className="bg-zeroa1-orange hover:bg-zeroa1-lightOrange text-white"
+          onClick={() => window.open('https://tally.so/r/m69L9J', '_blank')}
+        >
+          Começar Agora
+        </Button>
       </div>
     </header>
   );

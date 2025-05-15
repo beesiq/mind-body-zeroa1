@@ -13,7 +13,7 @@ const HeroSection: React.FC = () => {
               <img 
                 src="/lovable-uploads/0162e6e2-704b-4d2c-907c-18eaf24f5d2b.png" 
                 alt="ZeroA1 Logo" 
-                className="h-16" 
+                className="h-32" 
               />
             </div>
             <h1 className="heading-xl text-white mb-6">
@@ -24,7 +24,7 @@ const HeroSection: React.FC = () => {
               Um sistema de treinos 100% personalizado para a sua rotina, seus objetivos e suas necessidades específicas. Não existem dois treinos iguais, porque nenhuma rotina é igual.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button className="btn-primary text-lg flex items-center gap-2">
+              <Button className="btn-primary text-lg flex items-center gap-2" onClick={() => window.open('https://tally.so/r/m69L9J', '_blank')}>
                 Começar Agora <ArrowRight size={20} />
               </Button>
               <Button variant="outline" className="border-zeroa1-orange text-zeroa1-orange hover:bg-zeroa1-orange/10 text-lg">
@@ -33,8 +33,18 @@ const HeroSection: React.FC = () => {
             </div>
             <div className="mt-8 flex gap-6 items-center">
               <div className="flex -space-x-3">
-                {[1, 2, 3, 4].map((i) => (
-                  <div key={i} className="w-10 h-10 rounded-full bg-gray-700 border-2 border-black" />
+                {[
+                  'https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=160&q=80',
+                  'https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=160&q=80',
+                  'https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=160&q=80',
+                  'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=160&q=80'
+                ].map((src, i) => (
+                  <img 
+                    key={i} 
+                    src={src} 
+                    alt={`Person ${i+1}`} 
+                    className="w-10 h-10 rounded-full border-2 border-black object-cover" 
+                  />
                 ))}
               </div>
               <p className="text-sm font-medium text-gray-300">
