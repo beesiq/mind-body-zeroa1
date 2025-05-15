@@ -5,25 +5,25 @@ import { Check } from 'lucide-react';
 
 const PricingSection: React.FC = () => {
   return (
-    <section id="pricing" className="section-padding bg-white">
+    <section id="pricing" className="section-padding bg-black">
       <div className="container-zeroa1">
         <div className="text-center mb-16">
-          <h2 className="heading-lg mb-4">Invista no seu <span className="text-zeroa1-orange">melhor nível</span></h2>
-          <p className="body-md text-gray-700 max-w-3xl mx-auto">
+          <h2 className="heading-lg mb-4 text-white">Invista no seu <span className="text-zeroa1-orange">melhor nível</span></h2>
+          <p className="body-md text-gray-400 max-w-3xl mx-auto">
             Um plano que custa menos que uma mensalidade de academia, mas com resultados personalizados.
           </p>
         </div>
 
         <div className="flex flex-col lg:flex-row gap-8 max-w-4xl mx-auto">
           <div className="flex-1 animate-on-scroll">
-            <div className="border border-gray-200 rounded-xl p-8 h-full flex flex-col">
-              <h3 className="text-xl font-semibold mb-2">Plano Mensal</h3>
-              <p className="text-gray-600 mb-6">Ideal para quem quer experimentar</p>
+            <div className="bg-zeroa1-black border border-gray-800 rounded-xl p-8 h-full flex flex-col">
+              <h3 className="text-xl font-semibold mb-2 text-white">Plano Mensal</h3>
+              <p className="text-gray-400 mb-6">Ideal para quem quer experimentar</p>
               <div className="mb-6">
-                <span className="text-4xl font-bold">R$97</span>
+                <span className="text-4xl font-bold text-white">R$97</span>
                 <span className="text-gray-500">/mês</span>
               </div>
-              <ul className="space-y-3 mb-8 flex-grow">
+              <ul className="space-y-3 mb-8 flex-grow text-gray-300">
                 <li className="flex items-center">
                   <Check className="h-5 w-5 text-zeroa1-orange mr-2" />
                   <span>Quiz Inteligente Personalizado</span>
@@ -48,7 +48,7 @@ const PricingSection: React.FC = () => {
           </div>
 
           <div className="flex-1 animate-on-scroll delay-100">
-            <div className="bg-zeroa1-black text-white rounded-xl p-8 h-full flex flex-col relative overflow-hidden">
+            <div className="bg-zeroa1-black text-white border border-zeroa1-orange/20 rounded-xl p-8 h-full flex flex-col relative overflow-hidden">
               <div className="absolute top-0 right-0 bg-zeroa1-orange text-white px-4 py-1 text-sm font-semibold">
                 MAIS POPULAR
               </div>

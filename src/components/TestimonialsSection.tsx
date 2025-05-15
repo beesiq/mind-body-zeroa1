@@ -25,29 +25,29 @@ const testimonials = [
 
 const TestimonialsSection: React.FC = () => {
   return (
-    <section id="testimonials" className="section-padding bg-gradient-to-b from-white to-zeroa1-lightYellow/20">
+    <section id="testimonials" className="section-padding bg-black">
       <div className="container-zeroa1">
         <div className="text-center mb-16">
-          <h2 className="heading-lg mb-4">Quem já <span className="text-zeroa1-orange">transformou</span> sua rotina</h2>
-          <p className="body-md text-gray-700 max-w-3xl mx-auto">
+          <h2 className="heading-lg mb-4 text-white">Quem já <span className="text-zeroa1-orange">transformou</span> sua rotina</h2>
+          <p className="body-md text-gray-400 max-w-3xl mx-auto">
             Histórias reais de pessoas que começaram do zero e alcançaram seu melhor nível com o ZeroA1.
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
-            <div key={index} className="animate-on-scroll card-zeroa1 h-full flex flex-col">
+            <div key={index} className="animate-on-scroll bg-zeroa1-black border border-zeroa1-orange/20 rounded-xl p-6 h-full flex flex-col">
               <div className="flex items-center mb-4">
                 <div className="bg-zeroa1-orange/10 p-2 rounded-full mr-3">
                   <User className="h-6 w-6 text-zeroa1-orange" />
                 </div>
                 <div>
-                  <h3 className="font-semibold">{testimonial.name}</h3>
-                  <p className="text-sm text-gray-500">{testimonial.role}</p>
+                  <h3 className="font-semibold text-white">{testimonial.name}</h3>
+                  <p className="text-sm text-gray-400">{testimonial.role}</p>
                 </div>
               </div>
-              <p className="body-md text-gray-700 italic flex-grow">{testimonial.content}</p>
-              <div className="mt-4 pt-4 border-t border-gray-100">
+              <p className="body-md text-gray-300 italic flex-grow">{testimonial.content}</p>
+              <div className="mt-4 pt-4 border-t border-gray-800">
                 <p className="text-sm font-medium text-zeroa1-orange">{testimonial.rating}</p>
               </div>
             </div>

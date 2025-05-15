@@ -31,11 +31,11 @@ const coaches = [
 
 const CoachesSection: React.FC = () => {
   return (
-    <section className="section-padding bg-zeroa1-black text-white">
+    <section className="section-padding bg-black text-white">
       <div className="container-zeroa1">
         <div className="text-center mb-16">
           <h2 className="heading-lg mb-4">Escolha seu <span className="text-zeroa1-yellow">Coach Virtual</span></h2>
-          <p className="body-md text-gray-300 max-w-3xl mx-auto">
+          <p className="body-md text-gray-400 max-w-3xl mx-auto">
             Acompanhamento diário via WhatsApp, com um perfil emocional compatível com você.
           </p>
         </div>

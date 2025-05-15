@@ -22,11 +22,11 @@ const features = [
 
 const FeaturesSection: React.FC = () => {
   return (
-    <section id="features" className="section-padding bg-white">
+    <section id="features" className="section-padding bg-zeroa1-black">
       <div className="container-zeroa1">
         <div className="text-center mb-16">
-          <h2 className="heading-lg mb-4">Como <span className="text-zeroa1-orange">funciona</span></h2>
-          <p className="body-md text-gray-700 max-w-3xl mx-auto">
+          <h2 className="heading-lg mb-4 text-white">Como <span className="text-zeroa1-orange">funciona</span></h2>
+          <p className="body-md text-gray-400 max-w-3xl mx-auto">
             Um sistema completo de acompanhamento personalizado, do planejamento dos seus treinos até a motivação diária.
           </p>
         </div>
@@ -35,16 +35,16 @@ const FeaturesSection: React.FC = () => {
           {features.map((feature, index) => (
             <div key={index} className="card-zeroa1 animate-on-scroll h-full flex flex-col">
               <div className="mb-6 flex justify-center md:justify-start">{feature.icon}</div>
-              <h3 className="heading-sm mb-3">{feature.title}</h3>
-              <p className="body-md text-gray-700 flex-grow">{feature.description}</p>
+              <h3 className="heading-sm mb-3 text-white">{feature.title}</h3>
+              <p className="body-md text-gray-300 flex-grow">{feature.description}</p>
             </div>
           ))}
         </div>
 
         <div className="mt-20 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="animate-on-scroll order-2 lg:order-1">
-            <h2 className="heading-md mb-6">Do <span className="text-zeroa1-orange">zero</span> ao seu melhor <span className="text-zeroa1-orange">A1</span></h2>
-            <p className="body-md text-gray-700 mb-4">
+            <h2 className="heading-md mb-6 text-white">Do <span className="text-zeroa1-orange">zero</span> ao seu melhor <span className="text-zeroa1-orange">A1</span></h2>
+            <p className="body-md text-gray-300 mb-4">
               O ZeroA1 é sobre começar do zero com o plano certo para chegar ao seu melhor nível. Esqueça programas genéricos que ignoram suas necessidades individuais.
             </p>
             <div className="space-y-4 mt-8">
@@ -54,7 +54,7 @@ const FeaturesSection: React.FC = () => {
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
                 </div>
-                <p className="body-md">Planos que respeitam seus limites físicos</p>
+                <p className="body-md text-gray-300">Planos que respeitam seus limites físicos</p>
               </div>
               <div className="flex gap-3">
                 <div className="bg-zeroa1-yellow/20 rounded-full p-1">
@@ -62,7 +62,7 @@ const FeaturesSection: React.FC = () => {
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
                 </div>
-                <p className="body-md">Exercícios que se encaixam na sua rotina</p>
+                <p className="body-md text-gray-300">Exercícios que se encaixam na sua rotina</p>
               </div>
               <div className="flex gap-3">
                 <div className="bg-zeroa1-yellow/20 rounded-full p-1">
@@ -70,14 +70,18 @@ const FeaturesSection: React.FC = () => {
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
                 </div>
-                <p className="body-md">Acompanhamento que se adapta ao seu estilo emocional</p>
+                <p className="body-md text-gray-300">Acompanhamento que se adapta ao seu estilo emocional</p>
               </div>
             </div>
           </div>
           <div className="relative animate-on-scroll order-1 lg:order-2">
-            <div className="bg-zeroa1-gray h-[400px] rounded-xl overflow-hidden relative">
-              <div className="absolute inset-0 flex items-center justify-center">
-                <p className="text-center font-medium">Ilustração do app ZeroA1</p>
+            <div className="bg-zeroa1-black border border-zeroa1-orange/20 h-[400px] rounded-xl overflow-hidden relative">
+              <div className="absolute inset-0">
+                <img 
+                  src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&q=80" 
+                  alt="Person training" 
+                  className="object-cover w-full h-full opacity-50"
+                />
               </div>
               <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-60 h-60 rounded-full bg-zeroa1-orange/20"></div>
               <div className="absolute -right-6 -top-6 w-24 h-24 bg-zeroa1-yellow/40 rounded-full"></div>

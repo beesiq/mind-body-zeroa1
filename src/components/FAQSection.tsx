@@ -36,11 +36,11 @@ const faqs = [
 
 const FAQSection: React.FC = () => {
   return (
-    <section id="faq" className="section-padding bg-zeroa1-gray">
+    <section id="faq" className="section-padding bg-zeroa1-black">
       <div className="container-zeroa1">
         <div className="text-center mb-16">
-          <h2 className="heading-lg mb-4">Perguntas <span className="text-zeroa1-orange">Frequentes</span></h2>
-          <p className="body-md text-gray-700 max-w-3xl mx-auto">
+          <h2 className="heading-lg mb-4 text-white">Perguntas <span className="text-zeroa1-orange">Frequentes</span></h2>
+          <p className="body-md text-gray-400 max-w-3xl mx-auto">
             Tudo o que você precisa saber sobre o ZeroA1.
           </p>
         </div>
@@ -48,11 +48,11 @@ const FAQSection: React.FC = () => {
         <div className="max-w-4xl mx-auto animate-on-scroll">
           <Accordion type="single" collapsible className="w-full">
             {faqs.map((faq, index) => (
-              <AccordionItem key={index} value={`item-${index}`}>
-                <AccordionTrigger className="text-left font-semibold hover:text-zeroa1-orange">
+              <AccordionItem key={index} value={`item-${index}`} className="border-gray-800">
+                <AccordionTrigger className="text-left font-semibold text-white hover:text-zeroa1-orange">
                   {faq.question}
                 </AccordionTrigger>
-                <AccordionContent className="text-gray-700">
+                <AccordionContent className="text-gray-300">
                   {faq.answer}
                 </AccordionContent>
               </AccordionItem>

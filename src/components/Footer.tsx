@@ -3,7 +3,7 @@ import React from 'react';
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-zeroa1-black text-white py-12">
+    <footer className="bg-black text-white py-12 border-t border-gray-800">
       <div className="container-zeroa1">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="col-span-1 md:col-span-2">
@@ -13,7 +13,7 @@ const Footer: React.FC = () => {
             </p>
           </div>
           <div>
-            <h4 className="text-lg font-semibold mb-4">Links Rápidos</h4>
+            <h4 className="text-lg font-semibold mb-4 text-white">Links Rápidos</h4>
             <ul className="space-y-2">
               <li><a href="#features" className="text-gray-400 hover:text-white transition-colors">Como Funciona</a></li>
               <li><a href="#testimonials" className="text-gray-400 hover:text-white transition-colors">Depoimentos</a></li>
@@ -22,7 +22,7 @@ const Footer: React.FC = () => {
             </ul>
           </div>
           <div>
-            <h4 className="text-lg font-semibold mb-4">Contato</h4>
+            <h4 className="text-lg font-semibold mb-4 text-white">Contato</h4>
             <ul className="space-y-2">
               <li className="text-gray-400">contato@zeroa1.com.br</li>
               <li className="text-gray-400">WhatsApp: (11) 99999-9999</li>

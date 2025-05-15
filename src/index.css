@@ -107,7 +107,7 @@
   }
 
   .card-zeroa1 {
-    @apply bg-white rounded-xl shadow-lg p-6 md:p-8;
+    @apply bg-zeroa1-black border border-zeroa1-orange/10 rounded-xl shadow-lg p-6 md:p-8;
   }
 
   .animate-on-scroll {
@@ -118,3 +118,4 @@
     @apply animate-fade-in;
   }
 }
+
