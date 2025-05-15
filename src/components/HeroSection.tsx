@@ -9,6 +9,13 @@ const HeroSection: React.FC = () => {
       <div className="container-zeroa1">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="animate-on-scroll animated">
+            <div className="flex justify-start mb-6">
+              <img 
+                src="/lovable-uploads/0162e6e2-704b-4d2c-907c-18eaf24f5d2b.png" 
+                alt="ZeroA1 Logo" 
+                className="h-16" 
+              />
+            </div>
             <h1 className="heading-xl text-white mb-6">
               <span className="text-zeroa1-orange">Treine</span> do jeito certo para o 
               <span className="text-zeroa1-orange"> seu corpo</span>
