@@ -6,9 +6,10 @@ import { ArrowRight } from 'lucide-react';
 const HeroSection: React.FC = () => {
   return (
     <section className="relative pt-32 pb-16 md:pt-40 md:pb-24 bg-black overflow-hidden">
-      {/* Background with gradient, noise and movement */}
+      {/* Enhanced background with more movement */}
       <div className="absolute inset-0">
-        <div className="absolute inset-0 bg-gradient-to-br from-zeroa1-orange/20 via-black to-zeroa1-yellow/10"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-zeroa1-orange/30 via-black to-zeroa1-yellow/20"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-transparent to-black/60"></div>
         <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
         <div className="absolute inset-0 opacity-40"
              style={{
@@ -20,21 +21,25 @@ const HeroSection: React.FC = () => {
         <div className="absolute top-20 left-10 w-32 h-32 bg-zeroa1-orange/10 rounded-full blur-xl floating"></div>
         <div className="absolute bottom-20 right-10 w-40 h-40 bg-zeroa1-yellow/10 rounded-full blur-2xl floating" style={{ animationDelay: '2s' }}></div>
         <div className="absolute top-1/2 left-1/3 w-24 h-24 bg-zeroa1-orange/5 rounded-full blur-lg floating" style={{ animationDelay: '4s' }}></div>
+        <div className="absolute top-1/3 right-1/4 w-16 h-16 bg-zeroa1-orange/15 rounded-full blur-md floating" style={{ animationDelay: '1s' }}></div>
       </div>
 
       <div className="container-zeroa1 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="animate-on-scroll animated">
-            <div className="flex justify-start mb-6">
+            <div className="flex justify-start mb-8">
               <img 
-                src="/lovable-uploads/0162e6e2-704b-4d2c-907c-18eaf24f5d2b.png" 
-                alt="ZeroA1 Logo" 
-                className="h-64" 
+                src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&q=80&w=600&h=400" 
+                alt="Pessoa se exercitando com determinação" 
+                className="w-full max-w-md h-64 object-cover rounded-2xl shadow-2xl border-2 border-zeroa1-orange/30" 
               />
             </div>
-            <h1 className="heading-xl text-white mb-6">
-              <span className="text-zeroa1-orange">Treine</span> do jeito certo para o 
-              <span className="text-zeroa1-orange"> seu corpo</span>
+            <h1 className="heading-xl text-white mb-6 relative">
+              <span className="relative z-10 bg-gradient-to-r from-white via-white to-gray-100 bg-clip-text text-transparent drop-shadow-lg">
+                <span className="text-zeroa1-orange font-extrabold">Treine</span> do jeito certo para o 
+                <span className="text-zeroa1-orange font-extrabold"> seu corpo</span>
+              </span>
+              <div className="absolute -inset-1 bg-gradient-to-r from-zeroa1-orange/20 to-zeroa1-yellow/20 blur-lg -z-10 rounded-lg"></div>
             </h1>
             <p className="body-lg text-gray-400 mb-8">
               Um sistema de treinos 100% personalizado para a sua rotina, seus objetivos e suas necessidades específicas. Não existem dois treinos iguais, porque nenhuma rotina é igual.
@@ -80,7 +85,7 @@ const HeroSection: React.FC = () => {
                 />
               </div>
             </div>
-            <div className="absolute -bottom-10 -left-4 lg:-left-10 p-4 bg-zeroa1-black rounded-lg shadow-xl border border-zeroa1-orange/20 max-w-[200px] hover-scale animate-on-scroll delay-500">
+            <div className="absolute -bottom-10 -left-4 lg:-left-10 p-4 bg-zeroa1-black rounded-lg shadow-xl border border-zeroa1-orange/20 max-w-[200px] hover-scale animate-on-scroll delay-500 floating">
               <div className="flex items-center gap-2 mb-2">
                 <div className="w-8 h-8 bg-zeroa1-orange rounded-full flex items-center justify-center text-white font-bold">A1</div>
                 <span className="font-semibold text-white">Personalizado</span>
