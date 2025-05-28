@@ -29,9 +29,9 @@ const HeroSection: React.FC = () => {
           <div className="animate-on-scroll animated">
             <div className="flex justify-start mb-8">
               <img 
-                src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&q=80&w=600&h=400" 
-                alt="Pessoa se exercitando com determinação" 
-                className="w-full max-w-md h-64 object-cover rounded-2xl shadow-2xl border-2 border-zeroa1-orange/30" 
+                src="/lovable-uploads/0162e6e2-704b-4d2c-907c-18eaf24f5d2b.png" 
+                alt="ZeroA1 Logo" 
+                className="h-64" 
               />
             </div>
             <h1 className="heading-xl text-white mb-6 relative">
