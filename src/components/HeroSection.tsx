@@ -5,15 +5,31 @@ import { ArrowRight } from 'lucide-react';
 
 const HeroSection: React.FC = () => {
   return (
-    <section className="pt-32 pb-16 md:pt-40 md:pb-24 bg-black">
-      <div className="container-zeroa1">
+    <section className="relative pt-32 pb-16 md:pt-40 md:pb-24 bg-black overflow-hidden">
+      {/* Background with gradient, noise and movement */}
+      <div className="absolute inset-0">
+        <div className="absolute inset-0 bg-gradient-to-br from-zeroa1-orange/20 via-black to-zeroa1-yellow/10"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
+        <div className="absolute inset-0 opacity-40"
+             style={{
+               backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E")`,
+               backgroundSize: '256px 256px'
+             }}>
+        </div>
+        {/* Floating elements for movement */}
+        <div className="absolute top-20 left-10 w-32 h-32 bg-zeroa1-orange/10 rounded-full blur-xl floating"></div>
+        <div className="absolute bottom-20 right-10 w-40 h-40 bg-zeroa1-yellow/10 rounded-full blur-2xl floating" style={{ animationDelay: '2s' }}></div>
+        <div className="absolute top-1/2 left-1/3 w-24 h-24 bg-zeroa1-orange/5 rounded-full blur-lg floating" style={{ animationDelay: '4s' }}></div>
+      </div>
+
+      <div className="container-zeroa1 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="animate-on-scroll animated">
             <div className="flex justify-start mb-6">
               <img 
                 src="/lovable-uploads/0162e6e2-704b-4d2c-907c-18eaf24f5d2b.png" 
                 alt="ZeroA1 Logo" 
-                className="h-32" 
+                className="h-64" 
               />
             </div>
             <h1 className="heading-xl text-white mb-6">
@@ -64,7 +80,7 @@ const HeroSection: React.FC = () => {
                 />
               </div>
             </div>
-            <div className="absolute -bottom-10 -left-10 p-4 bg-zeroa1-black rounded-lg shadow-xl border border-zeroa1-orange/20 max-w-[200px]">
+            <div className="absolute -bottom-10 -left-4 lg:-left-10 p-4 bg-zeroa1-black rounded-lg shadow-xl border border-zeroa1-orange/20 max-w-[200px] hover-scale animate-on-scroll delay-500">
               <div className="flex items-center gap-2 mb-2">
                 <div className="w-8 h-8 bg-zeroa1-orange rounded-full flex items-center justify-center text-white font-bold">A1</div>
                 <span className="font-semibold text-white">Personalizado</span>
