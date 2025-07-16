@@ -27,7 +27,7 @@ const HeroSection: React.FC = () => {
               Um sistema de treinos 100% personalizado para a sua rotina, seus objetivos e suas necessidades específicas. Não existem dois treinos iguais, porque nenhuma rotina é igual.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button className="btn-primary text-lg flex items-center gap-2" onClick={() => window.open('https://tally.so/r/m69L9J', '_blank')}>
+              <Button className="btn-primary text-lg flex items-center gap-2" onClick={() => window.open('https://inlead.digital/zeroa1-formulario', '_blank')}>
                 Começar Agora <ArrowRight size={20} />
               </Button>
               <Button variant="outline" className="border-zeroa1-orange text-zeroa1-orange hover:bg-zeroa1-orange/10 text-lg">

@@ -21,7 +21,7 @@ const Header: React.FC = () => {
         </nav>
         <Button 
           className="bg-zeroa1-orange hover:bg-zeroa1-lightOrange text-white"
-          onClick={() => window.open('https://tally.so/r/m69L9J', '_blank')}
+          onClick={() => window.open('https://inlead.digital/zeroa1-formulario', '_blank')}
         >
           Começar Agora
         </Button>

@@ -18,7 +18,10 @@ const CTASection: React.FC = () => {
             <p className="text-lg md:text-xl text-white/90 mb-8">
               Saia do zero e alcance seu melhor nível com um plano 100% personalizado para suas necessidades.
             </p>
-            <Button className="bg-black hover:bg-gray-900 text-zeroa1-orange text-lg px-8 py-6 rounded-lg flex items-center mx-auto gap-2">
+            <Button 
+              className="bg-black hover:bg-gray-900 text-zeroa1-orange text-lg px-8 py-6 rounded-lg flex items-center mx-auto gap-2"
+              onClick={() => window.open('https://inlead.digital/zeroa1-formulario', '_blank')}
+            >
               Quero Começar Agora <ArrowRight size={20} />
             </Button>
           </div>

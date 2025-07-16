@@ -47,7 +47,7 @@ const PricingSection: React.FC = () => {
               
               <Button 
                 className="btn-primary w-full text-lg"
-                onClick={() => window.open('https://tally.so/r/m69L9J', '_blank')}
+                onClick={() => window.open('https://inlead.digital/zeroa1-formulario', '_blank')}
               >
                 Começar Agora
               </Button>
